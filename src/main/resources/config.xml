@@ -17,4 +17,13 @@
         <constructor-arg name="fileReader" ref="fileReader"/>
     </bean>
 
+    <bean id="helloWorld" class="com.event.third_example.HelloWorld">
+        <property name="message" value="Hello World!"/>
+    </bean>
+
+    <bean id="customEventHandler" class="com.event.fourth_example.CustomEventHandler"/>
+
+    <bean id="customEventPublisher" class="com.event.fourth_example.CustomEventPublisher"/>
+
+    <bean class="com.event.fifth_example.UserEventsProcessor"/>
 </beans>
